@@ -3,14 +3,14 @@
 import PackageDescription
 
 let package = Package(
-  name: "SwiftPhoenixClient", 
+  name: "SwiftPhoenixClient",
   dependencies: [
-    .package(url: "https://github.com/daltoniam/Starscream.git", from: "3.0.6"),
+    .package(url: "https://github.com/vapor/websocket-kit", from: "1.1.2")
   ],
   targets: [
     .target(
       name: "SwiftPhoenixClient",
-      dependencies: ["Starscream"],
+      dependencies: ["WebSocket"],
       path: "Sources"
     ),
   ]
